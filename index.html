@@ -6,34 +6,108 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Gmail Havola</title>
 	<style>
-		body {
-			font-family: Arial, sans-serif;
+		* {
 			margin: 0;
 			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Segoe UI', Arial, sans-serif;
+			background-color: #f4f6f8;
+			color: #333;
+			line-height: 1.6;
 		}
 
 		header {
-			background-color: #4CAF50;
+			background: linear-gradient(135deg, #4CAF50, #45a049);
 			color: white;
-			padding: 10px 0;
+			padding: 60px 20px;
 			text-align: center;
 		}
 
+		header h1 {
+			font-size: 2.2rem;
+			margin-bottom: 10px;
+		}
+
+		header p {
+			font-size: 1.1rem;
+			opacity: 0.9;
+		}
+
 		.container {
+			max-width: 600px;
+			margin: -30px auto 40px;
+			background: white;
+			padding: 30px;
+			border-radius: 12px;
+			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+			text-align: center;
+		}
+
+		.container h2 {
+			color: #4CAF50;
+			margin-bottom: 15px;
+		}
+
+		.container p {
+			font-size: 1rem;
+			color: #555;
+			margin-bottom: 20px;
+		}
+
+		.contact-btn {
+			display: inline-block;
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 28px;
+			border-radius: 30px;
+			text-decoration: none;
+			font-weight: bold;
+			transition: background-color 0.3s ease, transform 0.2s ease;
+		}
+
+		.contact-btn:hover {
+			background-color: #388E3C;
+			transform: translateY(-2px);
+		}
+
+		footer {
+			text-align: center;
 			padding: 20px;
+			color: #999;
+			font-size: 0.85rem;
+		}
+
+		@media (max-width: 480px) {
+			header h1 {
+				font-size: 1.6rem;
+			}
+
+			.container {
+				margin: -20px 16px 30px;
+				padding: 20px;
+			}
 		}
 	</style>
 </head>
 
 <body>
 	<header>
-		<h1>Salom! Menimcha, siz meni tanimaysiz.</h1>
+		<h1>Salom! 👋</h1>
+		<p>Menimcha, siz meni tanimaysiz — lekin tanishib olsak bo'ladi.</p>
 	</header>
+
 	<div class="container">
-		<h1>Men bilan bog'laning</h1>
-		<p>Agar savollaringiz bo'lsa, <a href="mailto:dimajony17@gmail.com">dimajony17@gmail.com</a>.</p>
+		<h2>Men bilan bog'laning</h2>
+		<p>Savollaringiz yoki takliflaringiz bo'lsa, quyidagi tugma orqali yozing:</p>
+		<a class="contact-btn" href="mailto:dimajony17@gmail.com">✉️ Email yuborish</a>
 	</div>
 
+	<footer>
+		&copy; 2026 Dilmurod. Barcha huquqlar himoyalangan.
+	</footer>
 </body>
 
 </html>
